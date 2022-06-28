@@ -1,0 +1,11 @@
+#Desired state us to write in yml format, we call the file as manifest file
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-devops-pod
+spec:
+  containers:
+  - name: nginx
+    image: nginx:1.16.2
+    ports:
+    - containerPort: 80
